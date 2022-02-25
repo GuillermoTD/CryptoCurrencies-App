@@ -19,7 +19,7 @@ const NewsPage = () => {
       .request(options)
       .then(function (response) {
         console.log(response.data);
-        console.log("estos son los datos")
+        console.log("estos son los datoss")
       })
       .catch(function (error) {
         console.error(error);
