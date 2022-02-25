@@ -16,7 +16,7 @@ function App() {
         data
       }
     }
-    function fetchData() {
+    async function fetchData() {
       var options = {
         method: "GET",
         url: "https://coinranking1.p.rapidapi.com/coins",
@@ -35,19 +35,37 @@ function App() {
             "cccf8699bbmshf19b932735676e1p1f292djsne4898d6a0813",
         },
       };
-
-      axios
-        .request(options)
-        .then(function (response) {
-          console.log(response.data.data);
-          console.log(response.data)
-          dispatch(handleResponse(response.data.data))
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
+      const Api_Data = await axios .request(options).catch((error)=>{
+        console.log("hay un error")
+      })
+      console.log(Api_Data.data)
+      dispatch(handleResponse(Api_Data.data.data))
     }
     fetchData();
+
+    const fetchApiData = async () =>{
+      let options = {
+        method: "GET",
+        url: "https://coinranking1.p.rapidapi.com/coins",
+        params: {
+          referenceCurrencyUuid: "yhjMzLPhuIDl",
+          timePeriod: "24h",
+          tiers: "1",
+          orderBy: "marketCap",
+          orderDirection: "desc",
+          limit: "50",
+          offset: "0",
+        },
+        headers: {
+          "x-rapidapi-host": "coinranking1.p.rapidapi.com",
+          "x-rapidapi-key":
+            "cccf8699bbmshf19b932735676e1p1f292djsne4898d6a0813",
+        },
+      };
+        const data = await axios .request(options)
+        console.log(data.data)
+    }
+    
   }, [dispatch]);
 
   return (
