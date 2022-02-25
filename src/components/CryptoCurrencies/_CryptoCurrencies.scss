@@ -1,0 +1,57 @@
+.CryptoCurrencies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(14rem,1fr));
+  gap:1rem 0.5rem;
+  align-items: center;
+  justify-items: center;
+  margin-top:2rem;
+  &_Card {
+    width: 15rem;
+    height: 10rem;
+    overflow:hidden;
+    border-radius:7px; 
+    display: flex;
+    flex-direction: column;
+    background:white;
+    &:hover{
+        box-shadow: 15px 15px 10px 1px #0001;
+    }
+    &_Header{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        padding:0 1rem 0 1rem;
+        position:relative;
+        height: 3rem;
+        &:before{
+            content:"";
+            position:absolute;
+            width:100%;
+            height:1px;
+            background:#0006;
+            bottom:0;
+            left:0;
+            right:0;
+            opacity:0.12;
+            margin-top:2rem;
+            
+            
+        }
+        &_Icon{
+            width:2rem;
+            height: 2rem;
+        }
+    }
+    &_Description{
+        display: flex;
+        flex-direction: column;
+        margin-left:4%;
+        gap:0.5rem;
+        margin-top:0.5rem;
+        & p{
+            color:black;
+            font-size:0.8rem;
+        }
+    }
+  }
+}

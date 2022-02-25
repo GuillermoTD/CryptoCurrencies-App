@@ -1,0 +1,44 @@
+@import "../../styles/sass/variables";
+.Navbar {
+  background: $color2;
+  width: 19rem;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  &_Brand {
+    font-size: 1.24rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: $color1;
+    margin-top:1rem;
+    &_icon {
+      font-size: 2.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+  }
+  &_Links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &_item {
+      color: white;
+      width: 100%;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      padding-left: 0.8rem;
+      font-size:0.9rem;
+      position:relative;
+      &:hover {
+        background: $color1;
+      }
+      
+    }
+  }
+}

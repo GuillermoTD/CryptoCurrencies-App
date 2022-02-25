@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+.Navbar {
+  background: #001529;
+  width: 19rem;
+  height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.Navbar_Brand {
+  font-size: 1.24rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7rem;
+  color: #1890FF;
+  margin-top: 1rem;
+}
+
+.Navbar_Brand_icon {
+  font-size: 2.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6rem;
+}
+
+.Navbar_Links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.Navbar_Links_item {
+  color: white;
+  width: 100%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0.8rem;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.Navbar_Links_item:hover {
+  background: #1890FF;
+}
+
+.Main {
+  width: 100%;
+  height: 100vh;
+  padding-left: 0.6rem;
+  background: #f1f2f5;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer {
+  background: #001529;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+  bottom: 0;
+}
+
+.Footer a {
+  color: white;
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}
+
+.Footer_Icon {
+  color: red;
+  margin: 0 0.5rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.CryptoCurrencies {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(14rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.CryptoCurrencies_Card {
+  width: 15rem;
+  height: 10rem;
+  overflow: hidden;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+}
+
+.CryptoCurrencies_Card:hover {
+  -webkit-box-shadow: 15px 15px 10px 1px #0001;
+          box-shadow: 15px 15px 10px 1px #0001;
+}
+
+.CryptoCurrencies_Card_Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+  position: relative;
+  height: 3rem;
+}
+
+.CryptoCurrencies_Card_Header:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #0006;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.12;
+  margin-top: 2rem;
+}
+
+.CryptoCurrencies_Card_Header_Icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.CryptoCurrencies_Card_Description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 4%;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.CryptoCurrencies_Card_Description p {
+  color: black;
+  font-size: 0.8rem;
+}
+
+.Home {
+  width: 99%;
+  height: 96%;
+  -webkit-box-shadow: -4px 2px 6px 5px #0001;
+          box-shadow: -4px 2px 6px 5px #0001;
+  padding-left: 0.7rem;
+  margin-top: .7rem;
+  border-radius: 4px;
+  overflow-x: hidden;
+}
+
+.Home_Stats {
+  width: 80%;
+}
+
+.Home_Stats_Title {
+  margin-bottom: 1.5rem;
+}
+
+.Home_Stats_Details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 80%;
+}
+
+.Home_Stats_Details_item_Title {
+  font-size: 0.8rem;
+}
+
+.Home_Stats_Details_item_Amount {
+  font-size: 1.2rem;
+}
+
+.Home_TopList {
+  width: 99%;
+  margin-top: 1rem;
+}
+
+.Home_TopList_Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.Home::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.Home::-webkit-scrollbar-track {
+  background: #F0F2F5;
+  border-radius: 5px;
+}
+
+.Home::-webkit-scrollbar-thumb {
+  background: #1890FF;
+  border-radius: 5px;
+}
+
+.CryptoCurrenciesPage {
+  width: 99%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.CryptoCurrenciesPage input {
+  width: 20rem;
+  height: 4rem;
+  border: none;
+  -webkit-box-shadow: inset 2px 3px 2px 2px #0001;
+          box-shadow: inset 2px 3px 2px 2px #0001;
+  margin-top: 2rem;
+}
+
+.CryptoCurrenciesPage input[placeholder] {
+  padding-left: 0.7rem;
+}
+
+.CryptoCurrenciesPage .CryptoCurrenciesPage_Items {
+  height: 100%;
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(18rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  justify-items: center;
+  gap: 1rem 0;
+}
+
+.CryptoCurrenciesPage .CryptoCurrenciesPage_Items_Card {
+  width: 15rem;
+  height: 10rem;
+  overflow: hidden;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.CryptoCurrenciesPage .CryptoCurrenciesPage_Items_Card:hover {
+  -webkit-box-shadow: 15px 15px 10px 1px #0001;
+          box-shadow: 15px 15px 10px 1px #0001;
+}
+
+.CryptoCurrenciesPage .CryptoCurrenciesPage_Items_Card_Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+}
+
+.CryptoCurrenciesPage .CryptoCurrenciesPage_Items_Card .CryptoCurrenciesPage_Card_Description {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+  padding-left: 1rem;
+}
+
+.NewsPage {
+  width: 99%;
+  height: 96%;
+  -webkit-box-shadow: 3px 4px 4px 7px #0001;
+          box-shadow: 3px 4px 4px 7px #0001;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  font-family: "Poppins",sans-serif;
+  overflow-x: hidden;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

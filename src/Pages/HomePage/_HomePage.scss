@@ -1,0 +1,59 @@
+.Home {
+  width: 99%;
+  height: 96%;
+  box-shadow: -4px 2px 6px 5px#0001;
+  padding-left: 0.7rem;
+  margin-top:.7rem;
+  border-radius:4px;
+  overflow-x:hidden;
+
+  &_Stats {
+      width:80%;
+    &_Title{
+        margin-bottom:1.5rem;
+    }
+
+    &_Details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap:1rem;
+      width:80%;
+
+      &_item {
+        &_Title {
+          font-size: 0.8rem;
+        }
+
+        &_Amount {
+          font-size: 1.2rem;
+        }
+
+      }
+    }
+  }
+
+  &_TopList{
+      width:99%;
+      margin-top:1rem;
+      &_Title{
+          display: flex;
+          justify-content: space-between;
+          padding: 0 1.5rem 0 1.5rem;
+      }
+  }
+
+  &::-webkit-scrollbar{
+    width:0.5rem;
+  }
+  &::-webkit-scrollbar-track{
+    background:$color3;
+    border-radius:5px;
+
+  }
+  &::-webkit-scrollbar-thumb{
+    background:$color1;
+    border-radius:5px;
+
+
+  }
+}
