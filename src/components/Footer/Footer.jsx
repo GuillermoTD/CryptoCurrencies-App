@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="Footer">
       <p>Made with</p>
       <AiFillHeart className="Footer_Icon" />
-      <a href="https://github.com/GuillermoTD" target="_blank">By Guillermo Tapia</a> 
+      <a href="https://github.com/GuillermoTD" target="_blank" rel="noreferrer">By Guillermo Tapia</a> 
 
     </div>
   );

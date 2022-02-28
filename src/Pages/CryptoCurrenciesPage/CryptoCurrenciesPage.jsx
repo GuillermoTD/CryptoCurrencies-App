@@ -3,7 +3,7 @@ import millify from "millify";
 import { localStorageState } from "../../reducers/getDataApi";
 import Footer from "../../components/Footer/Footer";
 
-const CryptoCurrencies_Card = ({ price, market, change, icon, name, rank }) => {
+const CryptoCurrenciesCard = ({ price, market, change, icon, name, rank }) => {
   return (
     <div className="CryptoCurrenciesPage_Items_Card">
       <div className="CryptoCurrenciesPage_Items_Card_Header">
@@ -19,7 +19,7 @@ const CryptoCurrencies_Card = ({ price, market, change, icon, name, rank }) => {
   );
 };
 
-const CryptoCurrencies = () => {
+const CryptoCurrenciesPage = () => {
   const { localCoins } = localStorageState;
   const [currencies, setCurrencies] = useState([]);
   const [searchItem, setSearchItem] = useState("");
@@ -48,7 +48,7 @@ const CryptoCurrencies = () => {
       <div className="CryptoCurrenciesPage_Items">
         {searchItem === ""
           ? localCoins.map((item) => (
-              <CryptoCurrencies_Card
+              <CryptoCurrenciesCard
                 name={item.name}
                 icon={item.iconUrl}
                 price={item.btcPrice}
@@ -58,7 +58,7 @@ const CryptoCurrencies = () => {
               />
             ))
           : currencies.map((item) => (
-              <CryptoCurrencies_Card
+              <CryptoCurrenciesCard
                 name={item.name}
                 icon={item.iconUrl}
                 price={item.btcPrice}
@@ -73,4 +73,4 @@ const CryptoCurrencies = () => {
   );
 };
 
-export default CryptoCurrencies;
+export default CryptoCurrenciesPage;

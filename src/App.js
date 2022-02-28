@@ -35,7 +35,7 @@ function App() {
             "cccf8699bbmshf19b932735676e1p1f292djsne4898d6a0813",
         },
       };
-      const Api_Data = await axios .request(options).catch((error)=>{
+      const Api_Data = await axios.request(options).catch((error)=>{
         console.log("hay un error")
       })
       console.log(Api_Data.data)
@@ -62,7 +62,7 @@ function App() {
             "cccf8699bbmshf19b932735676e1p1f292djsne4898d6a0813",
         },
       };
-        const data = await axios .request(options)
+        const data = await axios.request(options)
         console.log(data.data)
     }
     
@@ -70,11 +70,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* {
-          coins.map(item=>{
-          return <h1>{item.name}</h1>
-          })
-        } */}
       <Navbar />
       <Main />
     </div>
